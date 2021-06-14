@@ -289,8 +289,8 @@
   @media screen and (max-width:480px){
 /*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。*/
     body{
-      background-size: contain;
-      background-position: center 85%;
+      background-size:140% auto;
+      background-position: center bottom;
     }
   
     img{
@@ -326,7 +326,7 @@
     }
     .page main .quote-img{
       width: 270px;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 15px auto;
       z-index: -1;
       
     }
@@ -397,15 +397,63 @@
  
     .modal__content{
       width: 300px;
-      background-color: red;
+/*      background-color: red;*/
     }
     .modal__content p{
       width: auto;
-      background-color: red;
+/*      background-color: red;*/
       font-size: 18px;
     }
+    
+    
+    
+    /*  --------------- cast & crew  --------------------  */   
+   #modal03 .modal__content  {
+    width: 100%;
+   }
+   .modal__content section{
+    width: 280px;
+    margin: 0 auto 10px auto;
+/*    background-color: red;*/
+} 
+  
+  
+  
+  
+ .modal__content section img{
+     margin-right: 0;
+     width: 125px;
+    padding: 0;
+}    
+  .modal__content section p{
+     margin-right: 10px;
+     width: 100px;
+    padding: 0;
+}     
+    
+    
+    
+    
 
    /*  --------------- filmstills --------------------  */ 
+#modal04 .modal__content .film-img{
+     width: 220px;
+/*     margin-right:0;*/
+ 
+  
+   }
+ .modal__content .film-img img{
+     width: 100px;
+     margin: 0;
+   
+}
+    
+    
+    
+    
+    
+    
+    
     
   
     
