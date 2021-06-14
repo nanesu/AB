@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* CSS Document */
+  body{
+    display: flex;
+    flex-direction: column;  
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url("../images/bg.jpg");
+    background-position: center bottom;
+    background-size: 100vw auto;
+    background-attachment: fixed;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #0a0f15;
+    color: #e5eced;
+    font-family: brandon-grotesque, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 22px;
+    text-align: center;
+    
+  }
+  
+  a{
+     color: #e5eced;
+    text-decoration: none;
+    display: inline-block;
+    z-index: 30;
+  }
+  a:hover{
+    text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
+    color: #ccffff;
+  }
+  
+  section{
+    flex: 1;
+  
+  }
+  .header_box{
+    
+  }
+  
+  h1{
+    margin-top: 20px;
+    
+  }
+  h2{
+      margin: 0 auto;
+
+      width: 69.5%;
+      max-width: 950px; 
+      min-width: 495px;
+    
+  }
+  h2 img{
+    width: 100%;
+  }
+
+
+   h3{
+     width: 40.58%;
+     margin-right:  auto;
+     margin-left: auto;
+     margin-top: -15px;
+     max-width: 650px; 
+     min-width: 420px;  
+  }
+  h3 img{
+      width: 100%;
+  }
+  .main_box{
+      margin-top: 50px;
+      width: 100%;
+      
+  }
+  h4{
+    margin-bottom: 20px;
+  }
+ footer{
+
+   
+  }
+  nav{
+    margin-bottom: -70px;
+  }
+  ul{
+     display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+  ul li:nth-of-type(3) {
+    margin-left: auto;
+
+}
+ li{
+    list-style: none;
+   letter-spacing: 1.5px;
+  }
+  li:nth-child(1){
+/*    margin-left: 2.94%;*/
+  }
+    li:nth-child(2){
+      
+    margin-left: 3.66%;
+  }
+  
+      li:nth-child(3){
+      
+/*    margin-left: 36.66%;*/
+  }
+        li:nth-child(4){
+      
+    margin-left: 4.39%;
+/*    margin-right: 5.56%*/
+  }
+  
+  .contact_box{
+/*    display: -webkit-flex;*/
+    display: flex;
+/*    -webkit-justify-content: flex-start;*/
+    justify-content: center; 
+/*    background-color: rgba(0,0,0,0.9);*/
+    
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -10px;
+    
+  }
+
+  .bw{
+    width: 90px;
+/*    margin-left: 1%;*/
+    margin-right: 0.73%;
+    padding-top: px;
+  }
+  .bw img{
+    width: 100%;
+    
+  }
+  .sc {
+    margin-right: 2.19%;
+    padding-top: 15px;
+    width: 60px;
+  }
+  .sc img{
+    width: 100%;
+  }
+
+  p span{
+    font-size: 13px;
+  }
+  
+  
+  .code{
+    background-image: url("../images/code.png");
+    width: 500vw;
+    height: 468px;
+/*    background-size: cover;*/
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  } 
+  .code img{
+    width: 100%;
+  }
+  
+  
+  
+  
+  /* ---------------------- アニメーション　-----------------------　*/
+  
+  @keyframes moving {
+  100% {
+
+     transform: translateX(-250.5px);
+    
+    
+  }
+}
+
+.moving{
+ animation: 15s moving  linear infinite ;
+    
+}
+  
+  
+  
+  
+  
+  
+  
+/* ------------------------- モーダル　----------------------------　*/
+  
+.content{
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+}
+.modal__bg{
+    background: rgba(0,0,0,0.87);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: rgba(0,0,0,0.03);
+
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+  
+/*　　高さとオーバーフローを入れるとスクロール可能　　　*/
+    max-height: 100%;
+    overflow: auto;
+    
+
+
+}
+
+
+
+/*スクロールバー全体*/
+::-webkit-scrollbar {
+    width: 10px;
+   
+}
+
+/*スクロールバーの軌道*/
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+}
+
+/*スクロールバーの動く部分*/
+::-webkit-scrollbar-thumb {
+  background-color: rgba(50, 50, 50, .5);
+  border-radius: 10px;
+  box-shadow:0 0 0 1px rgba(255, 255, 255, .3);
+}
+
+
+
+
+
+
+
+
+
+
+.modal__content .subtitle{
+  margin-bottom: 70px;
+  font-size: 32px;
+/*  モーダル内-----ナビゲーションのタイトル色  */
+  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
+  color: #ccffff;
+}
+ .modal__content a{
+    text-align: center;
+   margin-top: 40px;
+   
+} 
+.modal__content p{
+ width: 600px;
+margin-top: 15px;
+margin-bottom: 65px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+   
+}
+.modal__content section{
+  width: 580px;
+  overflow: hidden;
+  margin: 0 auto 45px auto;
+  
+  
+}
+.modal__content section p {
+  float: right;
+  margin: 0 ;
+  padding-top: 65px;
+  text-align: left;
+  width: 300px;
+}
+.modal__content section img{
+  float: left;
+  object-fit: cover;
+ 
+}
+.modal__content .film-img{
+  padding: 20px;
+  background-color: black;
+}
+
+
+
+.mail_box{
+  overflow: hidden;
+  float: right;
+  margin-right: 30px;
+  margin-top: -25px;
+}
+  .twit {
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+
+  }
+  .twit img{
+    width: 100%;
+  }
+   .insta {
+     float: left;
+    width: 30px;
+      margin-right: 10px;
+/*    padding-top: 13.5px;*/
+  }
+  .insta img{
+    width: 100%;
+  }
+.mail{
+  float: left;
+}
+.mail i{
+  font-size: 20.5px;
+}
+
+
+
+
+/*-----contact_page--------*/
+
+#contact {
+
+}
+#contact .contact_wrapper{
+height: 100vh;
+   background: rgba(0,0,0,0.67);
+}
+#contact h1{
+  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
+  font-size: 32px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  
+}
+#contact form{
+
+ 
+}
+
+#contact textarea{
+  width: 500px;
+  height: 300px;
+  background: rgba(0,0,0,0.5);
+  color: #e5eced;
+  margin-bottom: 40px;
+}
+
+
+#contact input {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #e5eced;
+  font-size: 15px;
+  border: 0.1px solid gray;
+}
+#contact input[type="text"]{
+  width: 500px;
+}
+#contact input[type="email"]{
+  width: 500px;
+}
+#contact input[type="submit"]{
+  width: 200px;
+  border-radius: 20px;
+  color: #e5eced;
+}
+#contact input[type="submit"]:hover{
+  
+  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
+ 
+}
+#contact .bread-box{
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  font-size: 15px;
+}

@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  ------------  レスポンシブ   --------------------　*/
+
+ @media screen and (min-width:481px){
+/*  この場合の「min-width」とは、ここで指定した481pxサイズ以上の場合の指示内容になります。*/  
+
+   
+
+   
+   
+
+  
+}
+
+
+
+
+
+
+
+@media (min-width:756px) {
+
+
+  }
+
+
+
+@media screen and (min-width:851px) and (max-width:1024px){
+#modal04 .modal__content .film-img{
+     width: 750px;
+     margin:0 auto;
+   }
+    body{
+    
+   
+  }
+  footer .flex-nav li {
+    font-size: 17.5px;
+  }
+   .modal__content {
+    width: 100%;
+    
+  }
+   .modal__content p{
+    width: 600px;
+    font-size: 20px;
+    
+  }
+  
+}
+@media screen and (min-width:756px) and (max-width:850px){
+  #modal04 .modal__content .film-img{
+     width: 740px;
+     margin:0 auto;
+   }
+  footer .flex-nav li {
+    font-size: 15px;
+  }
+ 
+  
+ .modal__content {
+    width: 100%;
+    
+  }
+   .modal__content p{
+    width: 500px;
+    font-size: 20px;
+    
+  } 
+  
+  .modal__content section{
+    width: 30%;
+   
+} 
+  
+  
+ 
+  
+
+
+}
+
+  
+ /*  一番小さいサイズ*/
+@media screen and (min-width:490px) and (max-width:755px){
+  body{
+    background-size: 1360px auto;
+    background-position: center 92%;
+    
+  }
+  
+  .code{
+    z-index: -1;
+  } 
+  
+  footer nav{
+    display: none;
+    
+  }
+  main nav li{
+    font-size: 17.5px;
+    
+  }
+  main .quote-img{
+    margin-bottom: 40px;
+  }
+  main .response-nav {  
+    display:block;   
+    width: 200px;
+    margin: 0 auto;
+    
+    
+  }
+  
+  main .response-nav .response-menu{  
+  display:block;  
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 10%,    rgba(0, 0, 0, 0.1));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.001) 10%, rgba(0, 0, 0, 0.1));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.001) 10%,   rgba(0, 0, 0, 0.1));
+  padding: 5px;
+ 
+  }
+
+  
+  main .response-nav ul{
+    padding: 0;
+  }
+  main .response-nav li{
+    margin-bottom: 20px;
+  }
+  main .response-nav li:nth-child(5){
+    margin-bottom: 0;
+  }
+
+  
+  main nav .response-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+
+  }
+  
+   main nav .response-container li{
+    display: inline-block;
+    margin: 0;
+   
+} 
+ 
+
+  main nav .response-container p{
+    font-size: 13px;
+    
+   
+} 
+
+  .modal__content {
+    width: 100%;
+    
+  }
+  .modal__content p{
+    width: auto;
+    font-size: 20px;
+    
+  }
+   .modal__content section{
+     width: 430px;
+     overflow: hidden;
+     
+     
+   
+} 
+   .modal__content section img{
+/*      padding-right: 0;*/
+      width: 130px;
+     
+
+}  
+  
+    .modal__content section p{
+      float: left;
+
+      margin-right: 0;
+      padding: 0;
+    
+
+      height: auto;
+   
+}   
+     .modal__content section a{
+      
+     
+   
+}
+  
+  
+    #modal03 .modal__content section {
+   
+   }
+  
+  
+    #modal04 .modal__content .film-img{
+     width: 410px;
+     margin:0 auto;
+   }
+  
+  
+ 
+  
+  
+/*  --------------- contact form --------------------  */
+  .modal__content form{
+  width: 300px;
+
+}
+
+.modal__content input {
+  padding: 10px;
+ 
+  width: 300px; 
+}
+
+.modal__content textarea{
+  width: 300px;
+  
+}
+
+.modal__content input[type="submit"]{
+  width: 150px;
+ 
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+} 
+
+
+
+  
+  
+  @media screen and (max-width:480px){
+/*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。*/
+    body{
+      background-size: contain;
+      background-position: center 85%;
+    }
+  
+    img{
+      width:  100%
+    } 
+     .code{
+      width: 2400px;
+      z-index: -1;
+  }
+    header{
+      z-index: -1;
+    }
+    header h1{
+      width: 130px;
+      margin: 5px auto 0 auto;
+    z-index: -1;
+      
+    }
+    header h2{
+      width: 300px;
+      z-index: -1;
+      display: none;
+    }
+    header h3{
+      width: 260px;
+      z-index: -1;
+      display: none;
+    }
+    main .imagine-img{
+      width: 130px;
+      margin: 30px auto 20px auto;
+      z-index: -1;
+    }
+    .page main .quote-img{
+      width: 270px;
+      margin: 0 auto 30px auto;
+      z-index: -1;
+      
+    }
+    
+   
+    footer .flex-nav{
+      display: none;
+    }
+    footer .copyright{
+      display: none;
+    }
+    
+    
+    main .response-nav {  
+     display:contents;   
+     width: 100vw;
+     margin: 0 auto;
+     font-size: 15px;
+     z-index: 30;
+    
+    }
+    main .response-nav .response-menu li{
+        z-index: 30;
+    }
+     main .response-nav .content{  
+      padding-left: 0;
+      padding-right: 0;
+    
+    }
+    main .response-nav li{
+     margin-bottom: 10px;
+      
+    }
+    main .response-nav li a{
+     margin-bottom: 10px;
+      
+    }
+    main .response-nav li:nth-child(5){
+     margin-bottom: 0;
+    }
+
+ 
+     main nav .response-container li{
+    display: inline-block;
+    margin: 0;
+   
+}
+    
+    main nav .response-container .bw{
+      width: 90px;
+    }
+    main nav .response-container .sc{
+      width: 80px;
+    }
+    main nav .response-container .twit{
+      width: 20px;
+    }
+    main nav .response-container .insta{
+      width: 25px;
+    }
+   
+    main nav .response-container{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+ 
+    .modal__content{
+      width: 300px;
+      background-color: red;
+    }
+    .modal__content p{
+      width: auto;
+      background-color: red;
+      font-size: 18px;
+    }
+
+   /*  --------------- filmstills --------------------  */ 
+    
+  
+    
+    /*  --------------- contact form --------------------  */
+  .modal__content form{
+  width: 200px;
+
+}
+
+.modal__content input {
+  padding: 10px;
+ 
+  width: 200px; 
+}
+
+.modal__content textarea{
+  width: 200px;
+  height: 270px;
+  
+}
+
+.modal__content input[type="submit"]{
+  width: 100px;
+ 
+}
+    
+    
+
+
+} 
+
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*  ------------  レスポンシブ   --------------------　*/
+  
+ @media screen and (min-width:1024px){
+ 
+  h3 {
+  min-width:650px;
+  }
+
+
+  
+}
+
+@media (min-width: 700px) {
+  h2{
+  min-width: 695px;
+
+  }
+  h3 {
+  min-width:450px;
+  }
+  
+  
+  
+  }
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+
+  h3 {
+    width: 450px;
+  }
+    footer{
+/*     background-color: rgba(0,0,0,0.9);*/
+    
+  }
+    nav{
+      
+    margin-bottom: -40px;
+  }
+ 
+   body{
+    background-position: center top;
+     background-size: cover;
+  }
+  
+  
+  
+/*
+        .code{
+    background-image: url("site/WIRE_2025/code.png");
+    width: 200%;
+    height: 678px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  } 
+  .code img{
+    width: 100%;
+  }
+*/
+  
+  
+} 
+  
+ /*  一番小さいサイズ*/
+@media screen and (max-width:767px){
+  
+    
+  nav{
+    font-size: 13px;
+    margin-bottom: -40px;
+/*     background-color: rgba(0,0,0,0.9);*/
+/*    background-color: red;*/
+    
+   
+  }
+  li:nth-child(1){
+    margin-left: 0;
+    margin-right: 0;
+  }
+  li:nth-child(2){
+    margin-right: 7px;
+  }
+    li:nth-child(3){
+    margin-right: 0;
+  }
+  li:nth-child(4){
+    margin-right: 5px;
+  }
+  body{
+    background-position: center top;
+     background-size: cover;
+  }
+
+  ul{
+/*    background-color: blue;*/
+   
+
+    
+  }
+  li{
+/*    background-color: pink;*/
+  }
+  
+ 
+      
+/*
+      .code{
+    background-image: url("site/WIRE_2025/code.png");
+    width: 150%;
+    height: 678px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  } 
+  .code img{
+    width: 100%;
+  }
+*/
+  
+  
+  
+  
+  
+} 
+
+  
+  
+  @media screen and (max-width:510px){
+  
+    
+    ul{
+      display:list-item;
+/*      background-color: rgba(1,1,1,0.35);*/
+      margin-bottom: 0;
+      font-size: 16px;
+      
+      
+      
+    }
+    ul.content{
+      padding: 15px 0 330px 0;
+   
+    }
+    
+    li{
+      padding-bottom: 20px;
+    }
+     li:nth-child(1){
+      margin-top:30px;
+    }
+    
+    li:nth-child(4){
+      margin: 0;
+    }
+    
+      .code{
+    background-image: url("site/WIRE_2025/code.png");
+    width: 200%;
+    height: 778px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  } 
+  .code img{
+    width: 100%;
+  }
+    
+    
+    
+    
+    
+} 
+  
