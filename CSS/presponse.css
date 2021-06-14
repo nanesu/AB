@@ -51,6 +51,11 @@
   
 }
 @media screen and (min-width:756px) and (max-width:850px){
+    h3{
+
+      width: 430px
+  }
+  
   #modal04 .modal__content .film-img{
      width: 740px;
      margin:0 auto;
@@ -76,6 +81,22 @@
 } 
   
   
+  
+  
+ .modal__content section{
+     width: 500px;
+     
+     
+     
+   
+}   
+  
+  
+  
+  
+  
+  
+  
  
   
 
@@ -95,8 +116,26 @@
     z-index: -1;
   } 
   
+  h2{
+      width: 490px;
+  }
+   h3{
+
+      width: 420px
+  }
+  
+  
+  
+  
   footer nav{
     display: none;
+    
+  }
+   main .response-nav {  
+    display:block;   
+    width: 200px;
+    margin: 0 auto;
+    
     
   }
   main nav li{
@@ -106,13 +145,7 @@
   main .quote-img{
     margin-bottom: 40px;
   }
-  main .response-nav {  
-    display:block;   
-    width: 200px;
-    margin: 0 auto;
-    
-    
-  }
+ 
   
   main .response-nav .response-menu{  
   display:block;  
@@ -174,16 +207,16 @@
    
 } 
    .modal__content section img{
-/*      padding-right: 0;*/
+
       width: 130px;
      
 
 }  
   
     .modal__content section p{
-      float: left;
 
-      margin-right: 0;
+
+      margin-right: 25px;
       padding: 0;
     
 
@@ -198,7 +231,7 @@
   
   
     #modal03 .modal__content section {
-   
+     
    }
   
   
@@ -277,14 +310,14 @@
       
     }
     header h2{
-      width: 300px;
+      width: 230px;
       z-index: -1;
-      display: none;
+/*      display: none;*/
     }
     header h3{
-      width: 260px;
+      width: 200px;
       z-index: -1;
-      display: none;
+/*      display: none;*/
     }
     main .imagine-img{
       width: 130px;
@@ -343,10 +376,10 @@
 }
     
     main nav .response-container .bw{
-      width: 90px;
+      width: 70px;
     }
     main nav .response-container .sc{
-      width: 80px;
+      width: 50px;
     }
     main nav .response-container .twit{
       width: 20px;

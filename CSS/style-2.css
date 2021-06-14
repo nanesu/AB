@@ -74,7 +74,7 @@ h2{
 
       width: 69.5%;
       max-width: 950px; 
-      min-width: 495px;
+/*      min-width: 490px;*/
     
   }
   h2 img{
@@ -88,7 +88,7 @@ h2{
      margin-left: auto;
      margin-top: -15px;
      max-width: 650px; 
-     min-width: 420px;  
+/*     min-width: 420px;  */
   }
   h3 img{
       width: 100%;
@@ -303,8 +303,8 @@ footer nav .midle-container i{
 /* ------------------------- modal CAST & CREW　----------------------------　*/
 
 .modal__content section{
-  width: 60%;
-  min-width: 550px;
+  width: 650px;
+/*  min-width: 550px;*/
   overflow: hidden;
   margin-bottom: 15px;
   border: 1px solid #555656;
