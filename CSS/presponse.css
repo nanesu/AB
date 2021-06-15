@@ -3,13 +3,20 @@
 
 /*  ------------  レスポンシブ   --------------------　*/
 
- @media screen and (min-width:481px){
+ @media screen and (min-width:1366px){
 /*  この場合の「min-width」とは、ここで指定した481pxサイズ以上の場合の指示内容になります。*/  
 
    
-
-   
-   
+   body{
+     background-position: center 79%;
+     
+   }
+   h3{
+     margin-top: -3px;
+   }
+  main .imagine-img{
+  margin: 35px 0 18px 0;
+}
 
   
 }
