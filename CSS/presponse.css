@@ -297,14 +297,14 @@
 /*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。
     
   
-    
-    */
-    body{
+body{
       width: 100vw;
       height: 100vh;
       background-size:480px;
       background-position: center 70%;
     }
+    */
+  
   
     img{
       width:  100%
@@ -319,31 +319,29 @@
     header h1{
       width: 100px;
       margin: 5px auto 0 auto;
-    z-index: -1;
+    　z-index: -1;
       
     }
     header h2{
       width: 295px;
       z-index: -1;
-/*      display: none;*/
     }
     header h3{
       width: 210px;
       margin-top: -10px;
       z-index: -1;
-/*      display: none;*/
     }
     main .imagine-img{
       width: 80px;
       margin: 30px auto 40px auto;
       z-index: -1;
     }
-/*
+    
+/* クオータ消すかも？
     .page main .quote-img{
       width: 230px;
       margin: 0 auto 15px auto;
-      z-index: -1;
-      
+      z-index: -1;     
     }
 */
     
@@ -363,7 +361,7 @@
     
     
     
-/* 　保存データあり　　*/
+/* 　保存データあり　以下はNEW　*/
 
 main .responseP-nav{
      margin-top: 20px;
@@ -376,13 +374,7 @@ main .responseP-nav .responseP-menu li{
     }
 main .responseP-nav responseP-menu li:nth-child(5){
      margin-bottom: 0;
-    } 
-    
-    
-    
-    
-    
-    
+    }     
 main .responseP-nav .responseP-container{   
   position: fixed;
   bottom: 0;
