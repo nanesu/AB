@@ -17,7 +17,7 @@ body{
     font-style: normal;
     font-weight: 100;
     font-size: 22px;
-    background-image: url("../images/WIRE_2025/bg-big.jpeg");
+    background-image: url("../images/bg__1366.png");
     background-repeat: no-repeat;    
     background-position: center bottom;
     background-size: cover;
@@ -39,10 +39,11 @@ body{
 
 /* ---------------------- アニメーション　-----------------------　*/
 .code{
-position: fixed;
-top: 0;
+  position: fixed;
+  top: 0;
   width: 100vw;
 }
+
 
 
   @keyframes moving {
@@ -103,7 +104,9 @@ main .imagine-img{
 .response-nav{
   display: none;
 }
-
+.responseP-nav{
+  display: none;
+}
 
 
 
@@ -348,3 +351,49 @@ footer nav .midle-container i{
      width: 800px;
      margin:0 auto;
    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  スマホ表示レイアウト　　*/
+
+.Psynopsis-page{
+  text-align: left;
+  font-size: 12px;
+}
+.top-Pnav{
+  width: 450px;;
+  
+}
+.top-Pnav li{
+  display: inline-block;
+  margin: 10px 5px 0 5px; 
+}
+.Psynopsis-page h4{
+  font-size: 1.6rem;
+}
+.Psynopsis-page　p{
+  text-align: left;
+  font-size: 1.2rem;
+}

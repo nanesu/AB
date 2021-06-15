@@ -312,12 +312,12 @@
       
     }
     header h2{
-      width: 230px;
+      width: 285px;
       z-index: -1;
 /*      display: none;*/
     }
     header h3{
-      width: 200px;
+      width: 250px;
       z-index: -1;
 /*      display: none;*/
     }
@@ -327,7 +327,7 @@
       z-index: -1;
     }
     .page main .quote-img{
-      width: 270px;
+      width: 230px;
       margin: 0 auto 15px auto;
       z-index: -1;
       
@@ -340,148 +340,53 @@
     footer .copyright{
       display: none;
     }
-    
-    
-    main .response-nav {  
-     display:contents;   
-     width: 100vw;
-     margin: 0 auto;
-     font-size: 15px;
-     z-index: 30;
-    
-    }
-    main .response-nav .response-menu li{
-        z-index: 30;
-    }
-     main .response-nav .content{  
-      padding-left: 0;
-      padding-right: 0;
-    
-    }
-    main .response-nav li{
-     margin-bottom: 10px;
-      
-    }
-    main .response-nav li a{
-     margin-bottom: 10px;
-      
-    }
-    main .response-nav li:nth-child(5){
-     margin-bottom: 0;
-    }
+/* 　保存データあり　　*/
 
- 
-     main nav .response-container li{
+main .responseP-nav{
+     margin-top: 20px;
+     display: block;
+     font-size: 15px;
+     
+    }
+main .responseP-nav .responseP-menu li{
+      margin-bottom: 10px;
+    }
+main .responseP-nav responseP-menu li:nth-child(5){
+     margin-bottom: 0;
+    } 
+    
+    
+    
+    
+    
+    
+main .responseP-nav .responseP-container{   
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+main .responseP-nav .responseP-container li{
     display: inline-block;
-    margin: 0;
+    
+
    
 }
-    
-    main nav .response-container .bw{
+main nav .responseP-container .bw{
       width: 70px;
     }
-    main nav .response-container .sc{
+main nav .responseP-container .sc{
       width: 50px;
+      margin-right: 10px;
     }
-    main nav .response-container .twit{
-      width: 20px;
+main nav .responseP-container .twit{
+      width: 30px;
+      margin-right: 5px;
     }
-    main nav .response-container .insta{
-      width: 25px;
+main nav .responseP-container .insta{
+      width: 38px;
     }
    
-    main nav .response-container{
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
- 
-    .modal__content{
-      width: 300px;
-/*      background-color: red;*/
-    }
-    .modal__content p{
-      width: auto;
-/*      background-color: red;*/
-      font-size: 18px;
-    }
-    
-    
-    
-    /*  --------------- cast & crew  --------------------  */   
-   #modal03 .modal__content  {
-    width: 100%;
-   }
-   .modal__content section{
-    width: 280px;
-    margin: 0 auto 10px auto;
-/*    background-color: red;*/
-} 
-  
-  
-  
-  
- .modal__content section img{
-     margin-right: 0;
-     width: 125px;
-    padding: 0;
-}    
-  .modal__content section p{
-     margin-right: 10px;
-     width: 100px;
-    padding: 0;
-}     
-    
-    
-    
-    
-
-   /*  --------------- filmstills --------------------  */ 
-#modal04 .modal__content .film-img{
-     width: 220px;
-/*     margin-right:0;*/
- 
-  
-   }
- .modal__content .film-img img{
-     width: 100px;
-     margin: 0;
-   
-}
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    
-    /*  --------------- contact form --------------------  */
-  .modal__content form{
-  width: 200px;
-
-}
-
-.modal__content input {
-  padding: 10px;
- 
-  width: 200px; 
-}
-
-.modal__content textarea{
-  width: 200px;
-  height: 270px;
-  
-}
-
-.modal__content input[type="submit"]{
-  width: 100px;
- 
-}
-    
     
 
 
