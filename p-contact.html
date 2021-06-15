@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 
 
-<title>SYNOPSIS</title>
+<title>CONTACT</title>
 <link rel="stylesheet" href="CSS/reset.css">
 <!--　lightbox css　--> 
 <link rel="stylesheet" href="CSS/lightbox.css">
@@ -24,8 +24,8 @@
   
 </head>
 
-<body id="P-synopsis">
- <div class="Psynopsis-page">
+<body id="P-contact">
+ <div class="Pcontact-page">
    
    
    <!-- ハンバーガーメニュー -->
@@ -45,15 +45,22 @@
    
    
 
-   <div class="bread-cube"><a href="index.html">HOME</a>&nbsp;&lt;&nbsp;SYNOPSIS</div>
-  <h4 class="subtitle">Synopsis</h4>
-  <p>‘In an escalating battle of two minds, a reclusive programmer is plunged into a terrifying, mind-bending revelation as he becomes exposed to the social engineering of his own sentient supercomputer.’</p>
-</div>
-
+   <div class="bread-cube"><a href="index.html">HOME</a>&nbsp;&lt;&nbsp;CONTACT</div>
+  <h4 class="subtitle">CONTACT</h4>
+                   <div class="contact">                   
+                      <form method="post" action="mail.php">  
+                      <label><input type="text" name="name"  placeholder="Enter your name(required)" required="" ></label>
+                      <label><br><input type="email" name="email"  placeholder="Enter your e-mail(required)" required=""></label>
+                      <label><br><textarea name="comment" placeholder="message"></textarea></label>
+                      <input type="submit" value="submit">
+                      </form>
+                   </div>              
+  </div>
   
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/hamburger-menu.js"></script>
+  
   <script>
   /* オプション設定 */
 const options = {
@@ -63,6 +70,10 @@ const options = {
   dark: true, /* 画面の暗転（true, false） */
 };
   </script>
+   
+   
+
+
   
 </body>
 </html>

@@ -386,17 +386,12 @@ footer nav .midle-container i{
   width: 100%;
   padding: 20px; 
   overflow: hidden;
+  background: rgba(0,0,0,0.4);
+  height:100vh;
 }
 .top-Pnav{
-
- 
-
 }
 
-.Psynopsis-page .bread-cube{
-  font-size: 0.8rem;
-  margin-bottom: 50px;
-}
 .top-Pnav li{
   font-size: 1.4rem;
   margin: 0 0 15px 0; 
@@ -407,13 +402,105 @@ footer nav .midle-container i{
 }
 .top-Pnav li:last-child{
    padding-bottom: 15px;
+}    
+.bread-cube{
+  font-size: 0.8rem;
+  margin-bottom: 50px;
 }
-.Psynopsis-page h4{
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
-}
+
+
 .Psynopsis-page p{
   width: auto;
 
+}
+
+/*  P-FILMMEKER BIO  */
+.Pfilmmakerbio-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: hidden;
+  background: rgba(0,0,0,0.4);
+  height:100vh;
+}
+
+
+/*  P-CAST & CREW  */
+.Pcast_and_crew-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: scroll;
+    background: rgba(0,0,0,0.4);
+}
+.Pcast_and_crew-page section{
+  margin-bottom: 20px;
+}
+.Pcast_and_crew-page img{
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  margin-bottom: 5px;
+}
+/*  P-FILM STILLS  */
+.Pfilmstills-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: scroll;
+  background: rgba(0,0,0,0.4);
+  height: 100vh;
+}
+.Pfilmstills-page img{
+ width: 65%;
+  margin-bottom: 10px;
+}
+
+/* CONTACT  */
+.Pcontact-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: scroll;
+  background: rgba(0,0,0,0.4);
+  height: 100vh;
+}
+.Pcontact-page form{
+ 
+}
+
+.Pcontact-page input {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #e5eced;
+  font-size: 15px;
+  border: 0.1px solid #555656;
+  width: 90%; 
+}
+.Pcontact-page input[type="text"]{
+  margin-bottom: 15px;
+}
+.Pcontact-page input[type="email"]{
+  margin-bottom: 15px;
+}
+.Pcontact-page textarea{
+  width: 90%;
+  height: 150px;
+  background: rgba(0,0,0,0.5);
+  color: #e5eced;
+  margin-bottom: 20px;
+}
+
+.Pcontact-page input[type="submit"]{
+  width: 120px;
+  border-radius: 20px;
+  color: #e5eced; 
+}
+
+.Pcontact-page input[type="submit"]:hover{
+  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;  
 }
