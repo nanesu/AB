@@ -294,12 +294,16 @@
   
   
   @media screen and (max-width:480px){
-/*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。*/
+/*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。
+    
+  
+    
+    */
     body{
       width: 100vw;
       height: 100vh;
-      background-size:cover;
-      background-position: center top;
+      background-size:480px;
+      background-position: center 70%;
     }
   
     img{
@@ -313,32 +317,35 @@
       z-index: -1;
     }
     header h1{
-      width: 130px;
+      width: 100px;
       margin: 5px auto 0 auto;
     z-index: -1;
       
     }
     header h2{
-      width: 285px;
+      width: 295px;
       z-index: -1;
 /*      display: none;*/
     }
     header h3{
-      width: 250px;
+      width: 210px;
+      margin-top: -10px;
       z-index: -1;
 /*      display: none;*/
     }
     main .imagine-img{
-      width: 130px;
-      margin: 30px auto 20px auto;
+      width: 80px;
+      margin: 30px auto 40px auto;
       z-index: -1;
     }
+/*
     .page main .quote-img{
       width: 230px;
       margin: 0 auto 15px auto;
       z-index: -1;
       
     }
+*/
     
    
     footer .flex-nav{
@@ -347,6 +354,15 @@
     footer .copyright{
       display: none;
     }
+    
+    
+      .quote-img{
+      display: none;
+    }  
+    
+    
+    
+    
 /* 　保存データあり　　*/
 
 main .responseP-nav{
@@ -394,7 +410,7 @@ main nav .responseP-container .insta{
       width: 38px;
     }
    
-    
+   
 
 
 } 

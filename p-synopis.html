@@ -19,24 +19,33 @@
 <link rel="stylesheet" href="https://use.typekit.net/vkt3edn.css"> 
 <!--　Font Awsome -->
 <script src="https://kit.fontawesome.com/b49e01865c.js" crossorigin="anonymous"></script>
+  
+ <link rel="stylesheet" href="CSS/hamburger-menu.css">
+
+  
 </head>
 
 <body id="P-synopsis">
  <div class="Psynopsis-page">
-<!--
-   <nav class="top-Pnav">
-     <ul>
-     <li><a>HOME</a></li>
-       <li><a>SYNOPSIS</a></li>
-       <li><a>FILMMAKER BIO</a></li>
-       <li><a>CAST&nbsp;&&nbsp;CREW</a></li>
-       <li><a>FILMSTILLS</a></li>
-       <li><a>CONTACT</a></li>
-       
-     
-    </ul>
-   </nav>
--->
+   
+   
+   <!-- ハンバーガーメニュー -->
+<button class="hamburger-button"></button>
+
+<!-- ナビゲーション -->
+<nav class="hamburger-nav">
+  <ul class="top-Pnav">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="p-synopis.html">SYNOPSIS</a></li>
+    <li><a href="#">FILMMAKER BIO</a></li>
+    <li><a href="#">CAST&nbsp;&&nbsp;CREW</a></li>
+    <li><a href="#">FILMSTILLS</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+</nav>
+   
+   
+
    <div class="bread-cube"><a>HOME</a>&nbsp;&lt;&nbsp;SYNOPSIS</div>
   <h4 class="subtitle">Synopsis</h4>
   <p>‘In an escalating battle of two minds, a reclusive programmer is plunged into a terrifying, mind-bending revelation as he becomes exposed to the social engineering of his own sentient supercomputer.’</p>
@@ -44,6 +53,17 @@
 
   
   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/hamburger-menu.js"></script>
+  <script>
+  /* オプション設定 */
+const options = {
+  slide: 'top', /* スライド方向（none, top, bottom, left, right） */
+  duration: 300, /* 表示アニメーション速度（ms） */
+  weight: 'regular', /* アイコン太さ（regular, light, solid） */
+  dark: true, /* 画面の暗転（true, false） */
+};
+  </script>
   
 </body>
 </html>
