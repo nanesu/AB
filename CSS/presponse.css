@@ -295,15 +295,15 @@
   
   @media screen and (max-width:480px){
 /*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。
-    
+ */    
   
 body{
       width: 100vw;
       height: 100vh;
-      background-size:480px;
+      background-size:490px;
       background-position: center 70%;
     }
-    */
+   
   
   
     img{

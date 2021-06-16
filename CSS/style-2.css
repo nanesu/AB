@@ -32,10 +32,13 @@ body{
     z-index: 30;
   }
   a:hover{
-    text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
+    text-shadow: none;
     color: #ccffff;
   }
-
+  li a:hover{
+    text-shadow: 0 ;
+    color: #e5eced;
+  }
 
 /* ---------------------- アニメーション　-----------------------　*/
 .code{
