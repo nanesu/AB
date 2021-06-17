@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
-  body{
+*{
+   
+ 
+}
+body{
+    box-sizing: border-box;
     display: flex;
-    flex-direction: column;  
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-image: url("../images/bg.jpg");
-    background-position: center bottom;
-    background-size: 100vw auto;
-    background-attachment: fixed;
+    flex-direction: column; 
     width: 100vw;
+    height: 100vh;
     overflow: hidden;
     background-color: #0a0f15;
     color: #e5eced;
@@ -17,159 +17,38 @@
     font-style: normal;
     font-weight: 100;
     font-size: 22px;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;    
+    background-position: center 73%;
+    background-size: cover;
+    background-attachment: fixed;     
     text-align: center;
-    
   }
   
   a{
-     color: #e5eced;
+    color: #e5eced;
     text-decoration: none;
     display: inline-block;
     z-index: 30;
   }
   a:hover{
-    text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
+    text-shadow: none;
     color: #ccffff;
   }
-  
-  section{
-    flex: 1;
-  
-  }
-  .header_box{
-    
-  }
-  
-  h1{
-    margin-top: 20px;
-    
-  }
-  h2{
-      margin: 0 auto;
-
-      width: 69.5%;
-      max-width: 950px; 
-      min-width: 495px;
-    
-  }
-  h2 img{
-    width: 100%;
+  li a:hover{
+    text-shadow: 0 ;
+    color: #e5eced;
   }
 
-
-   h3{
-     width: 40.58%;
-     margin-right:  auto;
-     margin-left: auto;
-     margin-top: -15px;
-     max-width: 650px; 
-     min-width: 420px;  
-  }
-  h3 img{
-      width: 100%;
-  }
-  .main_box{
-      margin-top: 50px;
-      width: 100%;
-      
-  }
-  h4{
-    margin-bottom: 20px;
-  }
- footer{
-
-   
-  }
-  nav{
-    margin-bottom: -70px;
-  }
-  ul{
-     display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-  }
-  ul li:nth-of-type(3) {
-    margin-left: auto;
-
+/* ---------------------- アニメーション　-----------------------　*/
+.code{
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
- li{
-    list-style: none;
-   letter-spacing: 1.5px;
-  }
-  li:nth-child(1){
-/*    margin-left: 2.94%;*/
-  }
-    li:nth-child(2){
-      
-    margin-left: 3.66%;
-  }
-  
-      li:nth-child(3){
-      
-/*    margin-left: 36.66%;*/
-  }
-        li:nth-child(4){
-      
-    margin-left: 4.39%;
-/*    margin-right: 5.56%*/
-  }
-  
-  .contact_box{
-/*    display: -webkit-flex;*/
-    display: flex;
-/*    -webkit-justify-content: flex-start;*/
-    justify-content: center; 
-/*    background-color: rgba(0,0,0,0.9);*/
-    
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: -10px;
-    
-  }
 
-  .bw{
-    width: 90px;
-/*    margin-left: 1%;*/
-    margin-right: 0.73%;
-    padding-top: px;
-  }
-  .bw img{
-    width: 100%;
-    
-  }
-  .sc {
-    margin-right: 2.19%;
-    padding-top: 15px;
-    width: 60px;
-  }
-  .sc img{
-    width: 100%;
-  }
 
-  p span{
-    font-size: 13px;
-  }
-  
-  
-  .code{
-    background-image: url("../images/code.png");
-    width: 500vw;
-    height: 468px;
-/*    background-size: cover;*/
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  } 
-  .code img{
-    width: 100%;
-  }
-  
-  
-  
-  
-  /* ---------------------- アニメーション　-----------------------　*/
-  
+
   @keyframes moving {
   100% {
 
@@ -183,27 +62,142 @@
  animation: 15s moving  linear infinite ;
     
 }
+
+/*--------------header area--------------------*/
+.header{
   
-  
-  
-  
-  
-  
-  
-/* ------------------------- モーダル　----------------------------　*/
-  
-.content{
-    margin: 0 auto;
-    padding: 40px;
 }
 
+h1{
+    margin-top: 15px;
+     
+  }
+
+h2{
+      margin: 0 auto;
+
+      width: 69.5%;
+      max-width: 870px; 
+
+    
+  }
+  h2 img{
+    width: 100%;
+  }
+
+
+   h3{
+
+     width: 555px;
+     margin-right:  auto;
+     margin-left: auto;
+     
+     max-width: 600px; 
+
+  }
+  h3 img{
+      width: 100%;
+  }
+
+/*--------------main area--------------------*/
+
+main .imagine-img{
+  margin: 40px 0 20px 0;
+}
+
+
+.response-nav{
+  display: none;
+}
+.responseP-nav{
+  display: none;
+}
+
+
+
+/*--------------footer area--------------------*/
+footer{
+  width: 100vw;
+  position: fixed;
+  bottom:0;
+}
+footer nav{
+ 
+
+ 
+}
+footer nav ul{
+    
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-start;
+    justify-content: space-between;
+    margin: 0 40px;
+   
+  }
+
+
+footer nav .midle-container{
+    overflow: hidden;
+   
+}
+footer nav .midle-container li{
+  float: left;
+   
+}
+
+footer nav .midle-container .sc{
+  padding-top: 15px;
+  
+}
+footer nav .midle-container .twit{
+  margin-top: 20px;
+
+}
+footer nav .midle-container .insta{
+  margin-top: 21px;
+
+}
+footer nav .midle-container i{
+  font-size: 27.5px;
+  color: #555656;
+  margin-top: 21px;
+  
+}
+
+
+
+
+
+
+.copyright{
+  font-size: 13px;
+  color: #555656; 
+}
+
+
+
+
+
+/* ------------------------- modal content　----------------------------　*/
+.content{
+    margin: 0 auto;
+    padding: 40px 40px 0 40px;
+/*  padding: 40px;*/
+}
+/*
+.box{
+    background: #000000;
+    height: 200px;
+    margin-bottom: 100px;
+}
+*/
 .modal{
     display: none;
     height: 100vh;
     position: fixed;
     top: 0;
     width: 100%;
-  
 }
 .modal__bg{
     background: rgba(0,0,0,0.87);
@@ -213,23 +207,19 @@
 }
 .modal__content{
     background: rgba(0,0,0,0.03);
-
     left: 50%;
-    padding: 40px;
+    padding: 40px 40px 120px 40px;
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 60%;
-  
+    width: 100%;
+    /* 60 */
 /*　　高さとオーバーフローを入れるとスクロール可能　　　*/
     max-height: 100%;
     overflow: auto;
+    margin-top: 60px;
     
-
-
 }
-
-
 
 /*スクロールバー全体*/
 ::-webkit-scrollbar {
@@ -252,116 +242,51 @@
 
 
 
-
-
-
-
-
-
-
-.modal__content .subtitle{
-  margin-bottom: 70px;
-  font-size: 32px;
 /*  モーダル内-----ナビゲーションのタイトル色  */
+
+.modal__content h4{
+  margin-bottom: 70px;
+  font-size: 32px;  
   text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
   color: #ccffff;
 }
- .modal__content a{
-    text-align: center;
-   margin-top: 40px;
+ .modal__content p{
+ width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: justify;
    
 } 
-.modal__content p{
- width: 600px;
-margin-top: 15px;
-margin-bottom: 65px;
-margin-left: auto;
-margin-right: auto;
-text-align: left;
-   
-}
-.modal__content section{
-  width: 580px;
-  overflow: hidden;
-  margin: 0 auto 45px auto;
+ .modal__content a{
+   margin-top: 65px;
   
-  
-}
-.modal__content section p {
-  float: right;
-  margin: 0 ;
-  padding-top: 65px;
-  text-align: left;
-  width: 300px;
-}
-.modal__content section img{
-  float: left;
-  object-fit: cover;
- 
-}
-.modal__content .film-img{
-  padding: 20px;
-  background-color: black;
+
+} 
+
+
+/* ------------------------- CONTACT　----------------------------　*/
+
+.modal__content form{
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-
-
-.mail_box{
-  overflow: hidden;
-  float: right;
-  margin-right: 30px;
-  margin-top: -25px;
+.modal__content input {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #e5eced;
+  font-size: 15px;
+  border: 0.1px solid #555656;
+  width: 500px; 
 }
-  .twit {
-    float: left;
-    width: 20px;
-    margin-right: 10px;
-
-  }
-  .twit img{
-    width: 100%;
-  }
-   .insta {
-     float: left;
-    width: 30px;
-      margin-right: 10px;
-/*    padding-top: 13.5px;*/
-  }
-  .insta img{
-    width: 100%;
-  }
-.mail{
-  float: left;
+.modal__content input[type="text"]{
+  margin-bottom: 15px;
 }
-.mail i{
-  font-size: 20.5px;
+.modal__content input[type="email"]{
+  margin-bottom: 15px;
 }
-
-
-
-
-/*-----contact_page--------*/
-
-#contact {
-
-}
-#contact .contact_wrapper{
-height: 100vh;
-   background: rgba(0,0,0,0.67);
-}
-#contact h1{
-  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
-  font-size: 32px;
-  margin-bottom: 70px;
-  margin-top: 70px;
-  
-}
-#contact form{
-
- 
-}
-
-#contact textarea{
+.modal__content textarea{
   width: 500px;
   height: 300px;
   background: rgba(0,0,0,0.5);
@@ -369,33 +294,219 @@ height: 100vh;
   margin-bottom: 40px;
 }
 
+.modal__content input[type="submit"]{
+  width: 200px;
+  border-radius: 20px;
+  color: #e5eced; 
+}
 
-#contact input {
+.modal__content input[type="submit"]:hover{
+  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;  
+}
+
+
+
+
+
+/* ------------------------- modal CAST & CREW　----------------------------　*/
+
+.modal__content section{
+  width: 650px;
+  max-width: 550px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 1px solid #555656;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal__content section img{
+  object-fit: cover;
+  float: left;
+  margin-right: 65px;
+  
+   
+}
+.modal__content section p{
+  width: 280px;
+  margin-top: 55px;
+  
+ 
+
+
+  text-align: left;
+   
+}
+
+/* ------------------------- modal FILM STILLS　----------------------------　*/
+.modal .filmstills-title{
+  
+  
+}
+
+
+
+.modal .film-img a{
+  margin-top: 0;
+  
+  
+}
+
+  #modal04 .modal__content .film-img{
+     width: 800px;
+     margin:0 auto;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  スマホ表示レイアウト　　*/
+
+.Psynopsis-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: hidden;
+  background: rgba(0,0,0,0.4);
+  height:100vh;
+}
+.top-Pnav{
+}
+
+.top-Pnav li{
+  font-size: 1.4rem;
+  margin: 0 0 15px 0; 
+  padding: 0;
+}
+.top-Pnav li:first-child{
+   padding-top: 15px;
+}
+.top-Pnav li:last-child{
+   padding-bottom: 15px;
+}    
+.bread-cube{
+  font-size: 0.8rem;
+  margin-bottom: 50px;
+}
+
+
+.Psynopsis-page p{
+  width: auto;
+
+}
+
+/*  P-FILMMEKER BIO  */
+.Pfilmmakerbio-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: hidden;
+  background: rgba(0,0,0,0.4);
+  height:100vh;
+}
+
+
+/*  P-CAST & CREW  */
+.Pcast_and_crew-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px 20px 120px 20px;  
+  overflow: scroll;
+    background: rgba(0,0,0,0.4);
+}
+.Pcast_and_crew-page section{
+  margin-bottom: 20px;
+}
+.Pcast_and_crew-page img{
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  margin-bottom: 5px;
+}
+/*  P-FILM STILLS  */
+.Pfilmstills-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px 20px 120px 20px; 
+  overflow: scroll;
+  background: rgba(0,0,0,0.4);
+  height: 100vh;
+}
+.Pfilmstills-page img{
+ width: 65%;
+  margin-bottom: 10px;
+}
+
+/* CONTACT  */
+.Pcontact-page{
+  text-align: left;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px; 
+  overflow: scroll;
+  background: rgba(0,0,0,0.4);
+  height: 100vh;
+}
+.Pcontact-page form{
+ 
+}
+
+.Pcontact-page input {
   padding: 10px;
   background: rgba(0,0,0,0.5);
   color: #e5eced;
-  font-size: 15px;
-  border: 0.1px solid gray;
+  font-size: 16px;
+  border: 0.1px solid #555656;
+  width: 90%; 
+  max-width: 460px;
 }
-#contact input[type="text"]{
-  width: 500px;
+.Pcontact-page input[type="text"]{
+  margin-bottom: 15px;
 }
-#contact input[type="email"]{
-  width: 500px;
+.Pcontact-page input[type="email"]{
+  margin-bottom: 15px;
 }
-#contact input[type="submit"]{
-  width: 200px;
-  border-radius: 20px;
+.Pcontact-page textarea{
+  width: 90%;
+  max-width: 460px;
+  height: 150px;
+  background: rgba(0,0,0,0.5);
   color: #e5eced;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
-#contact input[type="submit"]:hover{
-  
-  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
- 
+
+.Pcontact-page input[type="submit"]{
+  width: 120px;
+  border-radius: 20px;
+  color: #e5eced; 
 }
-#contact .bread-box{
-  text-align: left;
-  margin-top: 30px;
-  margin-left: 30px;
-  font-size: 15px;
+
+.Pcontact-page input[type="submit"]:hover{
+  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;  
 }

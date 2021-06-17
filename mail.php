@@ -30,14 +30,14 @@ if (version_compare(PHP_VERSION, '5.1.0', '>=')) {//PHP5.1.0以上の場合の�
 //---------------------------　必須設定　必ず設定してください　-----------------------
 
 //サイトのトップページのURL　※デフォルトでは送信完了後に「トップページへ戻る」ボタンが表示されますので
-$site_top = "http://www.php-factory.net/";
+$site_top = "http://localhost/site/";
 
 //管理者のメールアドレス ※メールを受け取るメールアドレス(複数指定する場合は「,」で区切ってください 例 $to = "aa@aa.aa,bb@bb.bb";)
-$to = "xxxxxxxxxx@xxx.xxx";
+$to = "braundnaoko34@gmail.com";
 
 //自動返信メールの送信元メールアドレス
 //必ず実在するメールアドレスでかつ出来る限り設置先サイトのドメインと同じドメインのメールアドレスとすることを強く推奨します
-$from = "xxxxxxxxxx@xxx.xxx";
+$from = "braundnaoko34@gmail.com";
 
 //フォームのメールアドレス入力箇所のname属性の値（name="○○"　の○○部分）
 $Email = "Email";
@@ -73,26 +73,26 @@ $userMail = 1;
 $BccMail = "";
 
 // 管理者宛に送信されるメールのタイトル（件名）
-$subject = "WEBSITE_ABSOLUTE DENIAL　INQUIRE";
+$subject = "WEBSITE_ABSOLUTE DENIAL INQUIRE";
 
 // 送信確認画面の表示(する=1, しない=0)
-$confirmDsp = 1;
+$confirmDsp = 0;
 
 // 送信完了後に自動的に指定のページ(サンクスページなど)に移動する(する=1, しない=0)
 // CV率を解析したい場合などはサンクスページを別途用意し、URLをこの下の項目で指定してください。
 // 0にすると、デフォルトの送信完了画面が表示されます。
-$jumpPage = 0;
+$jumpPage = 1;
 
 // 送信完了後に表示するページURL（上記で1を設定した場合のみ）※httpから始まるURLで指定ください。（相対パスでも基本的には問題ないです）
-$thanksPage = "http://xxx.xxxxxxxxx/thanks.html";
+$thanksPage = "thanks.html";
 
 // 必須入力項目を設定する(する=1, しない=0)
-$requireCheck = 0;
+$requireCheck = 1;
 
 /* 必須入力項目(入力フォームで指定したname属性の値を指定してください。（上記で1を設定した場合のみ）
 値はシングルクォーテーションで囲み、複数の場合はカンマで区切ってください。フォーム側と順番を合わせると良いです。 
 配列の形「name="○○[]"」の場合には必ず後ろの[]を取ったものを指定して下さい。*/
-$require = array('お名前','Email');
+$require = array('name','Email');
 
 
 //----------------------------------------------------------------------
@@ -111,7 +111,7 @@ $re_subject = "送信ありがとうございました";
 
 //フォーム側の「名前」箇所のname属性の値　※自動返信メールの「○○様」の表示で使用します。
 //指定しない、または存在しない場合は、○○様と表示されないだけです。あえて無効にしてもOK
-$dsp_name = 'お名前';
+$dsp_name = 'name';
 
 //自動返信メールの冒頭の文言 ※日本語部分のみ変更可
 $remail_text = <<< TEXT
@@ -213,7 +213,7 @@ if(empty($errm)){
 		if($key == $Email) $post_mail = h($val);
 		if($key == $Email && $mail_check == 1 && !empty($val)){
 			if(!checkMail($val)){
-				$errm .= "<p class=\"error_messe\">【".$key."】はメールアドレスの形式が正しくありません。</p>\n";
+				$errm .= "<p class=\"error_messe\">【".$key."】has an incorrect email address format.</p>\n";
 				$empty_flag = 1;
 			}
 		}
@@ -256,7 +256,7 @@ else if($confirmDsp == 1){
 /*　▼▼▼送信確認画面のレイアウト※編集可　オリジナルのデザインも適用可能▼▼▼　*/
 ?>
 <!DOCTYPE HTML>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -351,7 +351,7 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 /* ▼▼▼送信完了画面のレイアウト　編集可 ※送信完了後に指定のページに移動しない場合のみ表示▼▼▼　*/
 ?>
 <!DOCTYPE HTML>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
@@ -383,7 +383,15 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 //確認画面無しの場合の表示、指定のページに移動する設定の場合、エラーチェックで問題が無ければ指定ページヘリダイレクト
 else if(($jumpPage == 1 && $sendmail == 1) || $confirmDsp == 0) { 
 	if($empty_flag == 1){ ?>
-<div align="center"><h4>入力にエラーがあります。下記をご確認の上「戻る」ボタンにて修正をお願い致します。</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" 前画面に戻る " onClick="history.back()"></div>
+<!-- 変更　-->
+<body style="background-color: #0a0f15">head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<title>完了画面</title>
+</head></body>
+<!-- ここまで　-->
+<div align="center"><h4 style="color: #e5eced">There is an error in the input. Please check the following and correct it using the "Back" button.</h4><div style="color:red"><?php echo $errm; ?></div><br /><br /><input type="button" value=" Go back to previous screen " onClick="history.back()"></div>
 <?php 
 	}else{ header("Location: ".$thanksPage); }
 }
@@ -616,7 +624,7 @@ function requireCheck($require){
 				}
 				//デフォルト必須チェック
 				elseif($val == ''){
-					$res['errm'] .= "<p class=\"error_messe\">【".h($key)."】は必須項目です。</p>\n";
+					$res['errm'] .= "<p class=\"error_messe\">【".h($key)."】is required.</p>\n";
 					$res['empty_flag'] = 1;
 				}
 				
@@ -626,7 +634,7 @@ function requireCheck($require){
 			
 		}
 		if($existsFalg != 1){
-				$res['errm'] .= "<p class=\"error_messe\">【".$requireVal."】が未選択です。</p>\n";
+				$res['errm'] .= "<p class=\"error_messe\">【".$requireVal."】has not been selected.</p>\n";
 				$res['empty_flag'] = 1;
 		}
 	}

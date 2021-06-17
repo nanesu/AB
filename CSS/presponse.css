@@ -1,436 +1,250 @@
 @charset "UTF-8";
 /* CSS Document */
-
 /*  ------------  レスポンシブ   --------------------　*/
-
- @media screen and (min-width:1366px){
-/*  この場合の「min-width」とは、ここで指定した481pxサイズ以上の場合の指示内容になります。*/  
-
-   
-   body{
-     background-position: center 79%;
-     
-   }
-   h3{
-     margin-top: -3px;
-   }
-  main .imagine-img{
-  margin: 35px 0 18px 0;
+@media screen and (min-width:1366px) {
+  /*  この場合の「min-width」とは、ここで指定した481pxサイズ以上の場合の指示内容になります。*/
+  body {
+    background-position: center 79%;
+  }
+  h3 {
+    margin-top: -3px;
+  }
+  main .imagine-img {
+    margin: 35px 0 18px 0;
+  }
 }
 
-  
-}
-
-
-
-
-
-
-
-@media (min-width:756px) {
-
-
+@media screen and (min-width:851px) and (max-width:1024px) {
+  #modal04 .modal__content .film-img {
+    width: 750px;
+    margin: 0 auto;
   }
-
-
-
-@media screen and (min-width:851px) and (max-width:1024px){
-#modal04 .modal__content .film-img{
-     width: 750px;
-     margin:0 auto;
-   }
-    body{
-    
-   
-  }
+  body {}
   footer .flex-nav li {
     font-size: 17.5px;
   }
-   .modal__content {
+  .modal__content {
     width: 100%;
-    
   }
-   .modal__content p{
+  .modal__content p {
     width: 600px;
     font-size: 20px;
-    
   }
-  
 }
-@media screen and (min-width:756px) and (max-width:850px){
-    h3{
-
-      width: 430px
+@media screen and (min-width:756px) and (max-width:850px) {
+  h3 {
+    width: 430px
   }
-  
-  #modal04 .modal__content .film-img{
-     width: 740px;
-     margin:0 auto;
-   }
+  #modal04 .modal__content .film-img {
+    width: 740px;
+    margin: 0 auto;
+  }
   footer .flex-nav li {
     font-size: 15px;
   }
- 
-  
- .modal__content {
+  .modal__content {
     width: 100%;
-    
   }
-   .modal__content p{
+  .modal__content p {
     width: 500px;
     font-size: 20px;
-    
-  } 
-  
-  .modal__content section{
+  }
+  .modal__content section {
     width: 30%;
-   
-} 
-  
-  
-  
-  
- .modal__content section{
-     width: 500px;
-     
-     
-     
-   
-}   
-  
-  
-  
-  
-  
-  
-  
- 
-  
-
-
+  }
+  .modal__content section {
+    width: 500px;
+  }
 }
-
-  
- /*  一番小さいサイズ*/
-@media screen and (min-width:490px) and (max-width:755px){
-  body{
+/*  ipad pcサイズ*/
+@media screen and (min-width:490px) and (max-width:755px) {
+  body {
     background-size: 1360px auto;
     background-position: center 92%;
-    
   }
-  
-  .code{
+  .code {
     z-index: -1;
-  } 
-  
-  h2{
-      width: 490px;
   }
-   h3{
-
-      width: 420px
+  h2 {
+    width: 490px;
   }
-  
-  
-  
-  
-  footer nav{
+  h3 {
+    width: 420px
+  }
+  footer nav {
     display: none;
-    
   }
-   main .response-nav {  
-    display:block;   
+  main .response-nav {
+    display: block;
     width: 200px;
     margin: 0 auto;
-    
-    
   }
-  main nav li{
+  main nav li {
     font-size: 17.5px;
-    
   }
-  main .quote-img{
+  main .quote-img {
     margin-bottom: 40px;
   }
- 
-  
-  main .response-nav .response-menu{  
-  display:block;  
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 10%,    rgba(0, 0, 0, 0.1));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.001) 10%, rgba(0, 0, 0, 0.1));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.001) 10%,   rgba(0, 0, 0, 0.1));
-  padding: 5px;
- 
+  main .response-nav .response-menu {
+    display: block;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 10%, rgba(0, 0, 0, 0.1));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.001) 10%, rgba(0, 0, 0, 0.1));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.001) 10%, rgba(0, 0, 0, 0.1));
+    padding: 5px;
   }
-
-  
-  main .response-nav ul{
+  main .response-nav ul {
     padding: 0;
   }
-  main .response-nav li{
+  main .response-nav li {
     margin-bottom: 20px;
   }
-  main .response-nav li:nth-child(5){
+  main .response-nav li:nth-child(5) {
     margin-bottom: 0;
   }
-
-  
-  main nav .response-container{
+  main nav .response-container {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    
-
   }
-  
-   main nav .response-container li{
+  main nav .response-container li {
     display: inline-block;
     margin: 0;
-   
-} 
- 
-
-  main nav .response-container p{
+  }
+  main nav .response-container p {
     font-size: 13px;
-    
-   
-} 
-
+  }
   .modal__content {
     width: 100%;
-    
   }
-  .modal__content p{
+  .modal__content p {
     width: auto;
     font-size: 20px;
-    
   }
-   .modal__content section{
-     width: 430px;
-     overflow: hidden;
-     
-     
-   
-} 
-   .modal__content section img{
-
-      width: 130px;
-     
-
-}  
-  
-    .modal__content section p{
-
-
-      margin-right: 25px;
-      padding: 0;
-    
-
-      height: auto;
-   
-}   
-     .modal__content section a{
-      
-     
-   
-}
-  
-  
-    #modal03 .modal__content section {
-     
-   }
-  
-  
-    #modal04 .modal__content .film-img{
-     width: 410px;
-     margin:0 auto;
-   }
-  
-  
- 
-  
-  
-/*  --------------- contact form --------------------  */
-  .modal__content form{
-  width: 300px;
-
-}
-
-.modal__content input {
-  padding: 10px;
- 
-  width: 300px; 
-}
-
-.modal__content textarea{
-  width: 300px;
-  
-}
-
-.modal__content input[type="submit"]{
-  width: 150px;
- 
-}
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-} 
-
-
-
-  
-  
-  @media screen and (max-width:480px){
-/*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。
- */    
-  
-body{
-      width: 100vw;
-      height: 100vh;
-      background-size:490px;
-      background-position: center 70%;
-    }
-   
-  
-  
-    img{
-      width:  100%
-    } 
-     .code{
-      width: 2400px;
-      z-index: -1;
+  .modal__content section {
+    width: 430px;
+    overflow: hidden;
   }
-    header{
-      z-index: -1;
-    }
-    header h1{
-      width: 100px;
-      margin: 5px auto 0 auto;
-    　z-index: -1;
-      
-    }
-    header h2{
-      width: 295px;
-      z-index: -1;
-    }
-    header h3{
-      width: 210px;
-      margin-top: -10px;
-      z-index: -1;
-    }
-    main .imagine-img{
-      width: 80px;
-      margin: 30px auto 40px auto;
-      z-index: -1;
-    }
-    
-/* クオータ消すかも？
+  .modal__content section img {
+    width: 130px;
+  }
+  .modal__content section p {
+    margin-right: 25px;
+    padding: 0;
+    height: auto;
+  }
+  .modal__content section a {}
+  #modal03 .modal__content section {}
+  #modal04 .modal__content .film-img {
+    width: 410px;
+    margin: 0 auto;
+  }
+  /*  --------------- contact form --------------------  */
+  .modal__content form {
+    width: 300px;
+  }
+  .modal__content input {
+    padding: 10px;
+    width: 300px;
+  }
+  .modal__content textarea {
+    width: 300px;
+  }
+  .modal__content input[type="submit"] {
+    width: 150px;
+  }
+}
+@media screen and (max-width:480px) {
+  /*  表示画面のサイズが0px～480pxの場合は以下の通りです。同様に、この場合の「max-width」とは、ここで指定した480ｐｘサイズ以下の場合の指示内容になります。
+ */
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-size: 490px;
+    background-position: center 70%;
+  }
+  img {
+    width: 100%
+  }
+  .code {
+    width: 2400px;
+    z-index: -1;
+  }
+  header {
+    z-index: -1;
+  }
+  header h1 {
+    width: 100px;
+    margin: 5px auto 0 auto;
+    z-index: -1;
+  }
+  header h2 {
+    width: 295px;
+    z-index: -1;
+  }
+  header h3 {
+    width: 210px;
+    margin-top: -10px;
+    z-index: -1;
+  }
+  main .imagine-img {
+    width: 80px;
+    margin: 30px auto 40px auto;
+    z-index: -1;
+  }
+  /* クオータ消すかも？
     .page main .quote-img{
       width: 230px;
       margin: 0 auto 15px auto;
       z-index: -1;     
     }
 */
-    
-   
-    footer .flex-nav{
-      display: none;
-    }
-    footer .copyright{
-      display: none;
-    }
-    
-    
-      .quote-img{
-      display: none;
-    }  
-    
-    
-    
-    
-/* 　保存データあり　以下はNEW　*/
-
-main .responseP-nav{
-     margin-top: 20px;
-     display: block;
-     font-size: 15px;
-     
-    }
-main .responseP-nav .responseP-menu li{
-      margin-bottom: 10px;
-    }
-main .responseP-nav responseP-menu li:nth-child(5){
-     margin-bottom: 0;
-    }     
-main .responseP-nav .responseP-container{   
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-main .responseP-nav .responseP-container li{
+  footer .flex-nav {
+    display: none;
+  }
+  footer .copyright {
+    display: none;
+  }
+  .quote-img {
+    display: none;
+  }
+  main .responseP-nav {
+    margin-top: 20px;
+    display: block;
+    font-size: 15px;
+  }
+  main .responseP-nav .responseP-menu li {
+    margin-bottom: 10px;
+  }
+  main .responseP-nav responseP-menu li:nth-child(5) {
+    margin-bottom: 0;
+  }
+  main .responseP-nav .responseP-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  main .responseP-nav .responseP-container li {
     display: inline-block;
-    
-
-   
+  }
+  main nav .responseP-container .bw {
+    width: 70px;
+  }
+  main nav .responseP-container .sc {
+    width: 50px;
+    margin-right: 10px;
+  }
+  main nav .responseP-container .twit {
+    width: 30px;
+    margin-right: 5px;
+  }
+  main nav .responseP-container .insta {
+    width: 38px;
+  }
+  h4 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #66ccff, 0 0 15px #009999;
+  }
 }
-main nav .responseP-container .bw{
-      width: 70px;
-    }
-main nav .responseP-container .sc{
-      width: 50px;
-      margin-right: 10px;
-    }
-main nav .responseP-container .twit{
-      width: 30px;
-      margin-right: 5px;
-    }
-main nav .responseP-container .insta{
-      width: 38px;
-    }
-   
-   
-
-    
-  
- h4{
-  font-size: 1.6rem;
-  margin-bottom: 30px;
-  text-shadow: 0 0 5px #66ccff , 0 0 15px #009999;
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-} 
-
-
-
-
-
-
-

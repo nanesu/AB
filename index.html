@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta charset="UTF-8">
 
 
@@ -11,7 +11,7 @@
 <!--　lightbox css　--> 
 <link rel="stylesheet" href="CSS/lightbox.css">
 <!--  style css  -->
-<link rel="stylesheet" href="CSS/style-2.css">
+<link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="CSS/presponse.css">
 <!--　Font Family　-->
 <link rel="stylesheet" href="https://use.typekit.net/vkt3edn.css"> 
@@ -65,7 +65,7 @@
          
         <div class="response-container">
          
-          <li class="bw"><img src="images/bridgeway logo all white - clean (2).png" width="110" alt=""></li>
+          <li class="bw"><img src="images/bw.png" width="110" alt=""></li>
           <li class="sc"><img src="images/scfilms.png" alt=""></li>
           <li class="twit"><a rel="noopener" href="https://twitter.com/ryan_braund" target="_blank" class="aioseop-link"><img src="images/twit.png" width="30" alt="twitter-logo"></a></li>
           <li class="insta"><a rel="noopener" href="https://www.instagram.com/ryan.braund/" target="_blank" class="aioseop-link"><img src="images/insta.png" width="38" alt="insta"></a></li>
@@ -91,7 +91,7 @@
          
 
          <div class="responseP-container">        
-          <li class="bw"><img src="images/bridgeway logo all white - clean (2).png" width="110" alt=""></li>
+          <li class="bw"><img src="images/bw.png" width="110" alt=""></li>
           <li class="sc"><img src="images/scfilms.png" alt=""></li>
           <li class="twit"><a rel="noopener" href="https://twitter.com/ryan_braund" target="_blank" class="aioseop-link"><img src="images/twit.png" width="30" alt=""></a></li>
           <li class="insta"><a rel="noopener" href="https://www.instagram.com/ryan.braund/" target="_blank" class="aioseop-link"><img src="images/insta.png" width="38" alt="insta"></a></li>
@@ -117,14 +117,14 @@
     
     
   
-  <!-------------------  footer area  ------------------->
+  <!--  footer area  -->
   <footer>
     <nav class="flex-nav">
        <ul class="content">
           <li><a class="js-modal-open" href="" data-target="modal01">SYNOPSIS</a></li>
           <li><a class="js-modal-open" href="" data-target="modal02">FILMMAKER BIO</a></li>
         <div class="midle-container">
-          <li class="bw"><img src="images/bridgeway logo all white - clean (2).png" width="110" alt=""></li>
+          <li class="bw"><img src="images/bw.png" width="110" alt=""></li>
           <li class="sc"><img src="images/scfilms.png" alt=""></li>
           <li class="twit"><a rel="noopener" href="https://twitter.com/ryan_braund" target="_blank" class="aioseop-link"><img src="images/twit.png" width="30" alt=""></a></li>
           <li class="insta"><a rel="noopener" href="https://www.instagram.com/ryan.braund/" target="_blank" class="aioseop-link"><img src="images/insta.png" width="38" alt="insta"></a></li>
@@ -145,7 +145,7 @@
     
     
     
-<!--  ------------------------ Synopsis　--------------------------  -->
+<!--  modal Synopsis　  -->
     
     <div id="modal01" class="modal js-modal">
         <div class="modal__bg js-modal-close"></div>
@@ -155,6 +155,9 @@
                <a class="js-modal-close" href="">Close</a>
         </div><!--modal__inner-->
         </div><!--modal-->
+    
+<!--  modal Filmmaker Bio  -->
+    
     <div id="modal02" class="modal js-modal">
         <div class="modal__bg js-modal-close"></div>
         <div class="modal__content">
@@ -165,7 +168,7 @@
     </div><!--modal-->
 
 
-<!--  ------------------------ Cast and Crew　--------------------------  -->
+<!-- modal Cast and Crew  -->
     
    <div id="modal03" class="modal js-modal">
         <div class="modal__bg js-modal-close"></div>
@@ -210,7 +213,7 @@
     </div><!--modal-->
  
     
-<!--  ----------------------- FILM STILLS　--------------------------  -->
+<!--  modal FILM STILLS　  -->
     
    <div id="modal04" class="modal js-modal">
         <div class="modal__bg js-modal-close"></div>
@@ -239,24 +242,14 @@
                 <img src="images/websitestills/Screen Shot 2020-09-30 at 16.37.36.jpg" width="200" alt=""></a> 
               <a href="images/websitestills/Screen Shot 2020-08-25 at 12.33.05.jpg" data-lightbox="fillmstills" >
                 <img src="images/websitestills/Screen Shot 2020-08-25 at 12.33.05.jpg" width="200" alt=""></a> 
-                    
-                   
                    
         </div>              
-                    
-                    
-                    
-                    
-                    
-                    
-                  
-                  
-                    <a class="js-modal-close" href="">Close</a>
+                       <a class="js-modal-close" href="">Close</a>
         </div><!--modal__inner-->
     </div><!--modal-->
     
     
-<!--   CONTACT　 -->
+<!--  modal CONTACT　 -->
     
          <div id="modal05" class="modal js-modal">
         <div class="modal__bg js-modal-close"></div>
@@ -265,8 +258,8 @@
                    <div class="contact">                   
                       <form method="post" action="mail.php">  
                       <label><input type="text" name="name"  placeholder="Enter your name(required)" required="" ></label>
-                      <label><br><input type="email" name="email"  placeholder="Enter your e-mail(required)" required=""></label>
-                      <label><br><textarea name="comment" placeholder="message"></textarea></label>
+                      <label><br><input type="text" name="Email"  placeholder="Enter your e-mail(required)" required=""></label>
+                      <label><br><textarea name="お問い合わせ内容" placeholder=" Enter your message"></textarea></label>
                       <input type="submit" value="submit">
                       </form>
                    </div>
@@ -294,14 +287,13 @@
 
   
 <!--  light box  -->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/lightbox.js"></script>
   
   
   
   
-  
+<!--  modal script  -->
   <script type="text/javascript">
  $(function(){
     var winScrollTop;
@@ -323,16 +315,7 @@
     }); 
 }); 
   
-//     lightbox.option({
-//      'resizeDuration': 200,
-//      'wrapAround': true,
-//   
-//    })   
-
-
-    
-    
-  </script> 
+   </script> 
   
   
   
