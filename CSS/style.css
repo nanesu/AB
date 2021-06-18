@@ -102,7 +102,14 @@ h2{
 /*--------------main area--------------------*/
 
 main .imagine-img{
-  margin: 40px 0 20px 0;
+  margin: 40px auto 20px auto;
+  display: flex;
+ justify-content: center;
+  width: 480px;
+}
+main .imagine-img li{
+  list-style-type: none;
+  width: 190px;
 }
 
 

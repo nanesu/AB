@@ -10,7 +10,7 @@
     margin-top: -3px;
   }
   main .imagine-img {
-    margin: 35px 0 18px 0;
+    margin: 18px auto 18px auto;
   }
 }
 
@@ -188,10 +188,27 @@
     z-index: -1;
   }
   main .imagine-img {
-    width: 80px;
+    width: 245px;
     margin: 30px auto 40px auto;
     z-index: -1;
   }
+  
+  main .imagine-img li{
+    
+   margin-right: 5px;
+  }
+main .imagine-img li:nth-child(1){
+  
+  width: 45px;
+}
+ main .imagine-img li:nth-child(2){
+  
+  width: 120px;
+} 
+ main .imagine-img li:nth-child(3){
+  margin-right: 0;
+  width: 80px;
+} 
   /* クオータ消すかも？
     .page main .quote-img{
       width: 230px;
