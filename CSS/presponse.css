@@ -196,7 +196,7 @@
   
   main .imagine-img li{
     
-   margin-right: 5px;
+   
   }
 main .imagine-img li:nth-child(1){
   
@@ -207,7 +207,6 @@ main .imagine-img li:nth-child(1){
   width: 80px;
 } 
  main .imagine-img li:nth-child(3){
-  margin-right: 0;
   width: 110px;
 } 
    main .imagine-img li:nth-child(4){
